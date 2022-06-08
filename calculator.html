@@ -1,0 +1,155 @@
+
+<!-- saved from url=(0170)file:///C:/Users/user/AppData/Local/Temp/%7B9902E1D7-FD1D-4ADE-B78E-AE4C91287D3C%7D/%E8%AE%A1%E7%AE%97%E5%99%A81.5%EF%BC%88%E5%86%85%E6%B5%8B%E7%89%88%EF%BC%89%20(2).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+   <meta name="calculator" content="xiaorong">
+	
+		</head><body onload="hit()"><h1 align="center">
+			
+				<a href="http://user.qzone.qq.com/1214610973/main">
+					<font color="gold">计算器<font>
+				</font></font></a><font color="gold"><font>
+			
+		</font></font></h1><font color="gold"><font>	
+	
+	<script>
+														//var chuchun;
+		var numberall;
+		var π=3.14;
+		var shizi;
+		function number(nums){
+		shizi= document.getElementById("xsck");//显示窗口 xiatong
+		if (nums == 0 && xsck.value.length==0){
+		//alert("hh");
+		return;
+		}                                         //chuchun = shizi.value;
+		shizi.value=shizi.value+nums;
+										//chuchun=document.getElementById(nums);
+		}
+		function qinglin(){
+		shizi= document.getElementById("xsck");//清零
+		shizi.value="";
+		}
+		function jieguo(){
+		shizi= document.getElementById("xsck");//计算
+		numberall=eval(shizi.value);
+		shizi.value=numberall;
+		}
+		function tuiwei(){
+		shizi= document.getElementById("xsck");
+		shizi.value = shizi.value.substr(0,shizi.value.length - 1);//此段经过修改任性多了
+		}
+		function fengshu(){
+		shizi= document.getElementById("xsck");
+		shizi.value = 1/shizi.value;
+		}
+		function pingfang(){
+		shizi= document.getElementById("xsck");
+		shizi.value =shizi.value*shizi.value ;
+		}
+		function yibai(){
+		shizi= document.getElementById("xsck");
+		if (xsck.value.length==0)
+		{return;
+		}
+		shizi.value =shizi.value*100;
+		}
+		//function yibai(){
+		//shizi= document.getElementById("xsck");
+		//if (xsck.value.length==0)
+		//{return;
+		//}
+		//shizi.value =shizi.value*100;
+		//}
+		function hit(){
+		alert("本计算器作者为Rong XIAO.  版本1.5 计算器π=3.14 ps:此计算器乘号不得省略 计算器新增“退位、π、分数”等功能.")
+		}
+	</script>
+	
+	
+		<table border="3" style=";border-color:#1E90FF;width:98%;height:98%;border:1px solid #f00;" align="center" bgcolor="black">
+		 <colgroup>
+		   <col align="center" span="3">
+			</colgroup><tbody><tr>
+				<td colspan="3">
+					<input type="text" id="xsck" readonly="ture" style=" font-size:100px;width:98%;height:98%;border:1px solid #f00;color:#1E90FF;background-color:black;">
+				</td>
+				<td>
+					<input type="button" value="De" id="clear" onclick="qinglin()" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td>
+				<td>
+					<input type="button" value="Del" id="cancel" onclick="tuiwei()" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td>
+			</tr><tr>
+			</tr><tr>
+				<td> 
+					<input type="button" value=" 7 " id="7" onclick="number(7)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" 8 " id="8" onclick="number(8)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" 9 " id="9" onclick="number(9)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" + " id="add" onclick="number(&#39;+&#39;)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td>
+				<td> 
+					<input type="button" value="1/X" id="fengshu" onclick="fengshu()" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+			</tr>
+				<tr><td> 
+					<input type="button" value=" 4 " id="4" onclick="number(4)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" 5 " id="5" onclick="number(5)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" 6 " id="6" onclick="number(6)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" - " id="sub" onclick="number(&#39;-&#39;)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td>
+				<td> 
+					<input type="button" value=" X2" id="fengshu" onclick="pingfang()" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+			</tr>
+			<tr>
+				<td> 
+					<input type="button" value=" 1 " id="1" onclick="number(1)" style="width:98%;height:98%;border:1px solid #f00;font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" 2 " id="2" onclick="number(2)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" 3 " id="3" onclick="number(3)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" × " id="mul" onclick="number(&#39;*&#39;)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" π " id="mul" onclick="number(&#39;π&#39;)" style="width:98%;height:98%;border:1px solid #f00;font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+			</tr>
+			<tr>
+				<td>  
+					<input type="button" value=" 0 " id="0" onclick="number(0)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" 00" id="00" onclick="yibai()" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" . " id="point" onclick="number(&#39;.&#39;)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" ÷ " id="division" onclick="number(&#39;/&#39;)" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+				<td> 
+					<input type="button" value=" = " id="result" onclick="jieguo()" style="width:98%;height:98%;border:1px solid #f00; font-size: 100px;color:#1E90FF;background-color:black;"> 
+				</td> 
+			</tr>
+		  
+		 
+		</tbody></table>
+	
+
+</font></font></body></html>
